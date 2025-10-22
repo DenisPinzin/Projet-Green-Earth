@@ -21,6 +21,10 @@ body {
   padding: 0% 4%;
 }
 
+span {
+  font-weight: bold;
+}
+
 /* HEADER */
 
 header {
@@ -52,6 +56,8 @@ header {
   padding: 10px 20px;
   border-radius: 9px;
   font-weight: bold;
+  display: inline-block;
+  margin-top: 2%;
 }
 
 .btn-gradient {
@@ -81,7 +87,7 @@ nav ul a {
   font-weight: bold;
 }
 
-/* AGISSON */
+/* HERO */
 
 .hero {
   margin-top: 4%;
@@ -89,15 +95,20 @@ nav ul a {
 }
 
 .hero-description {
-  width: 1fr;
+  width: 50%;
+  padding: 2rem 0;
+}
+.hero-descip-home {
+  padding-right: 2%;
 }
 
-.hero-description p {
-  margin: 4% 0;
+.hero-description p:first-child {
+  margin: 0;
 }
 
 .hero-head-title {
   margin-top: 0;
+  padding-top: 0;
 }
 
 h1 {
@@ -107,7 +118,7 @@ h1 {
 }
 
 .hero-img {
-  width: 1fr;
+  width: 50%;
 }
 
 .hero-img img {
@@ -175,14 +186,15 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 900;
+  margin: 0px;
 }
 
 .our-mission p {
   margin: 0;
 }
 
-.our-mission .btn {
+.our-mission a {
   align-self: flex-start;
   margin-top: 2%;
 }
@@ -303,7 +315,7 @@ h2 {
     "a b d"
     "a c d"
     "e e f";
-  grid-template-rows: repeat(3, 14rem);
+  grid-template-rows: repeat(3, 11rem);
   gap: 2%;
   margin: 0 auto;
 }
@@ -377,7 +389,11 @@ h2 {
 .don {
   background-color: green;
   color: white;
-  padding: 1%;
+  padding: 3.5%;
+}
+
+.don h2 {
+  font-size: 2.5rem;
 }
 
 .don-contain {
@@ -463,4 +479,141 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.copyright {
+  margin-top: 4%;
+}
+
+/* ABOUT */
+
+.title-about {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background: linear-gradient(0.25turn, rgb(75, 188, 75), rgb(0, 63, 0));
+  padding: 2%;
+  font-weight: bold;
+}
+
+.hero-revers {
+  flex-direction: row-reverse;
+}
+
+.hero-descrip-about {
+  padding-left: 3%;
+  padding-top: 0;
+}
+
+/* HUMAN */
+
+.human {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.human-head {
+  text-align: center;
+}
+
+.human-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 33%;
+  padding: 4%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.human-img-rounded {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.human-img-rounded img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.human-card-paragraph {
+  text-align: center;
+}
+
+.human-card-paragraph p {
+  color: orange;
+}
+
+/* IMPACT */
+
+.impact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 6rem;
+}
+
+.impact-head {
+  text-align: center;
+}
+
+.human-all-img {
+  display: flex;
+  gap: 1rem;
+}
+
+.human-img {
+  width: 50%;
+  max-height: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.human-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.human-all-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.human-card {
+  background-color: white;
+  width: 33%;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* DON */
+
+.don-about {
+  background-color: rgb(39, 68, 39);
+}
+
+/* ACTUALITY */
+
+.actuality-about {
+  margin-top: 4rem;
+}
+
+.actuality-about h2 {
+  margin: 1% 0;
 }
