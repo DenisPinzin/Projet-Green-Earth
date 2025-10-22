@@ -18,7 +18,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0% 4%;
+  padding: 2.5rem 0;
 }
 
 span {
@@ -33,7 +33,11 @@ header {
   background-color: white;
 }
 
-.head-logo {
+header .container {
+  padding: 0;
+}
+
+.header-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,14 +96,11 @@ nav ul a {
 .hero {
   margin-top: 4%;
   display: flex;
+  gap: 2%;
 }
 
 .hero-description {
   width: 50%;
-  padding: 2rem 0;
-}
-.hero-descip-home {
-  padding-right: 2%;
 }
 
 .hero-description p:first-child {
@@ -135,10 +136,6 @@ h1 {
 
 /* NOTRE PROJET */
 
-.our-project {
-  padding-top: 4rem;
-}
-
 .our-project-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -163,7 +160,7 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 4% 0px;
+
   padding: 10%;
   display: flex;
   align-items: center;
@@ -187,7 +184,7 @@ h1 {
 
 h2 {
   font-weight: 900;
-  margin: 0px;
+  font-size: 2.5rem;
 }
 
 .our-mission p {
@@ -222,7 +219,6 @@ h2 {
 .actuality {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4%;
 }
 
 .actuality-contain {
@@ -305,10 +301,6 @@ h2 {
 
 /* GALERIE */
 
-.galerie {
-  margin-bottom: 8%;
-}
-
 .galerie-all-img {
   display: grid;
   grid-template-areas:
@@ -381,7 +373,6 @@ h2 {
   background-color: red;
   color: white;
   align-self: center;
-  margin: 4%;
 }
 
 /* DON */
@@ -389,11 +380,6 @@ h2 {
 .don {
   background-color: green;
   color: white;
-  padding: 3.5%;
-}
-
-.don h2 {
-  font-size: 2.5rem;
 }
 
 .don-contain {
@@ -412,7 +398,6 @@ h2 {
 .asso-contain {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
 }
 
 .assoc {
@@ -435,12 +420,11 @@ h2 {
   object-position: center;
 }
 
-/* FOOTER */
+/* FOOTER*/
 
 footer {
   background-color: rgb(0, 64, 0);
   color: white;
-  padding: 4% 0;
 }
 
 .footer-links {
@@ -451,6 +435,7 @@ footer {
 
 .footer-links h2 {
   text-decoration: underline;
+  font-size: 1.7rem;
 }
 
 .footer-links ul {
@@ -485,8 +470,10 @@ footer {
   margin-top: 4%;
 }
 
-/* ABOUT */
+/*-_-_--_-_-_-_-ABOUT PAGE-_-_--_-_-_-_-*/
+/*-_-_--_-_-_-_-ABOUT PAGE-_-_--_-_-_-_-*/
 
+/* HERO */
 .title-about {
   width: 100%;
   text-align: center;
@@ -505,14 +492,9 @@ footer {
   padding-top: 0;
 }
 
-/* HUMAN */
+/* HUMAN -ABOUT*/
 
-.human {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-.human-head {
+.human-header {
   text-align: center;
 }
 
@@ -555,7 +537,7 @@ footer {
   color: orange;
 }
 
-/* IMPACT */
+/* IMPACT -ABOUT*/
 
 .impact {
   display: flex;
@@ -564,7 +546,7 @@ footer {
   margin-bottom: 6rem;
 }
 
-.impact-head {
+.impact-header {
   text-align: center;
 }
 
@@ -602,18 +584,8 @@ footer {
   text-align: center;
 }
 
-/* DON */
+/* DON -ABOUT*/
 
 .don-about {
   background-color: rgb(39, 68, 39);
-}
-
-/* ACTUALITY */
-
-.actuality-about {
-  margin-top: 4rem;
-}
-
-.actuality-about h2 {
-  margin: 1% 0;
 }
